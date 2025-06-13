@@ -21,7 +21,8 @@ export default async function Home() {
     <div className='w-full flex flex-col items-center px-4 py-8'>
       <div className='max-w-6xl w-full grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4 grid'>
         {filteredPosts.map((post) => (
-          <div key={post.slug} className='rounded-xl shadow-md bg-white'>
+          <div key={post.slug} className='rounded-xl shadow-md bg-white'
+           style={{ boxShadow: '0 8px 10px rgba(0, 0, 0, 0.35)' }}>
             <Image
               src={
                 post.metadata.image ||

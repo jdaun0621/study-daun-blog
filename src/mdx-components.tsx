@@ -59,7 +59,8 @@ export function Code(props: React.HTMLAttributes<HTMLElement>) {
   return (
     <code
       {...props}
-      className='bg-gray-200 rounded px-1 text-sm font-mono text-gray-800'>
+      className='bg-gray-200 rounded px-1 text-sm font-mono text-gray-800'
+    >
       {props.children}
     </code>
   );
@@ -67,7 +68,7 @@ export function Code(props: React.HTMLAttributes<HTMLElement>) {
 
 export function Wrapper({ children }: { children: React.ReactNode }) {
   return (
-    <div className="border rounded-xl shadow-[0_0_0_1px_rgba(0,0,0,0.1)] p-6 bg-white">
+    <div className="rounded-xl p-6 bg-white shadow-2xl">
       {children}
     </div>
   );
