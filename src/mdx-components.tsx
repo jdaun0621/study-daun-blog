@@ -65,6 +65,14 @@ export function Code(props: React.HTMLAttributes<HTMLElement>) {
   );
 }
 
+export function Wrapper({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="border rounded-xl shadow-[0_0_0_1px_rgba(0,0,0,0.1)] p-6 bg-white">
+      {children}
+    </div>
+  );
+}
+
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     ...components,
@@ -82,5 +90,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     pre: Pre,
     code: Code,
     StackBlitzEmbed: StackBlitzEmbed,
+    wrapper: Wrapper,
   };
 }
