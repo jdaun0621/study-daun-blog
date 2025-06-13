@@ -21,7 +21,7 @@ export default async function Home() {
     <div className='w-full flex flex-col items-center px-4 py-8'>
       <div className='max-w-6xl w-full grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4 grid'>
         {filteredPosts.map((post) => (
-          <div key={post.slug} className='rounded-xl shadow-md bg-white'
+          <div key={post.slug} className='rounded-xl shadow-md bg-indigo-100'
            style={{ boxShadow: '0 8px 10px rgba(0, 0, 0, 0.35)' }}>
             <Image
               src={
@@ -33,19 +33,19 @@ export default async function Home() {
               width={1200}
               height={630}
             />
-            <div className='p-4'>
+            <div className='p-4 bg-slate-100 '>
               <h2 className='text-2xl font-bold mb-2'>
                 <Link href={`/posts/${post.slug}`}>
                   {post.metadata.title}
                 </Link>
               </h2>
-              <p className='text-gray-600 mb-4'>
+              <p className='text-gray-00 mb-4'>
                 {post.metadata.description}
               </p>
               <Link
                 href={`/posts/${post.slug}`}
-                className='text-yellow-500 hover:underline'>
-                Read more
+                className='text-blue-600 hover:underline'>
+                더보기
               </Link>
             </div>
           </div>
