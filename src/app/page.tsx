@@ -15,10 +15,13 @@ export default async function Home() {
     }),
   );
 
+  // 👇 metadata가 없는 포스트는 필터링
+  const filteredPosts = posts.filter((post) => post.metadata);
+
   return (
     <div className='w-full flex flex-col items-center px-4 py-8'>
       <div className='max-w-6xl w-full grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4 grid'>
-        {posts.map((post) => (
+        {filteredPosts.map((post) => (
           <div key={post.slug} className='border rounded-lg shadow-md'>
             <Image
               src={
@@ -32,9 +35,13 @@ export default async function Home() {
             />
             <div className='p-4'>
               <h2 className='text-2xl font-bold mb-2'>
-                <Link href={`/posts/${post.slug}`}>{post.metadata.title}</Link>
+                <Link href={`/posts/${post.slug}`}>
+                  {post.metadata.title}
+                </Link>
               </h2>
-              <p className='text-gray-600 mb-4'>{post.metadata.description}</p>
+              <p className='text-gray-600 mb-4'>
+                {post.metadata.description}
+              </p>
               <Link
                 href={`/posts/${post.slug}`}
                 className='text-blue-500 hover:underline'>
