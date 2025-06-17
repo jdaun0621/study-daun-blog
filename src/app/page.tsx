@@ -19,9 +19,9 @@ export default async function Home() {
 
   return (
     <div className='w-full flex flex-col items-center px-4 py-8'>
-      <div className='max-w-6xl w-full grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-4 grid'>
+      <div className='max-w-6xl w-full grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-6 grid'>
         {filteredPosts.map((post) => (
-          <div key={post.slug} className='rounded-xl shadow-md bg-indigo-100'
+          <div key={post.slug} className='rounded-xl bg-indigo-100 shadow-md transition-transform transform hover:-translate-y-1 hover:scale-105 hover:shadow-xl cursor-pointer'
            style={{ boxShadow: '0 8px 10px rgba(0, 0, 0, 0.35)' }}>
             <Image
               src={
@@ -33,13 +33,13 @@ export default async function Home() {
               width={1200}
               height={630}
             />
-            <div className='p-4 bg-slate-100 '>
+            <div className='p-4 bg-slate-100 rounded-b-xl'>
               <h2 className='text-2xl font-bold mb-2'>
                 <Link href={`/posts/${post.slug}`}>
                   {post.metadata.title}
                 </Link>
               </h2>
-              <p className='text-gray-00 mb-4'>
+              <p className='text-gray-700 mb-4'>
                 {post.metadata.description}
               </p>
               <Link
