@@ -21,7 +21,7 @@ export default async function Home() {
     <div className='w-full flex flex-col items-center px-4 py-8 '>
       <div className='max-w-6xl w-full grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-6 grid'>
         {filteredPosts.map((post) => (
-          <div key={post.slug} className='rounded-xl bg-purple-100 shadow-md transition-transform transform hover:-translate-y-1 hover:scale-105 hover:shadow-xl cursor-pointer'
+          <div key={post.slug} className='rounded-xl bg-violet-200 shadow-md transition-transform transform hover:-translate-y-1 hover:scale-105 hover:shadow-xl cursor-pointer'
            style={{ boxShadow: '0 8px 10px rgba(0, 0, 0, 0.35)' }}>
             <Image
               src={
