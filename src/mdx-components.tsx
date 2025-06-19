@@ -55,6 +55,15 @@ export function Pre(props: React.HTMLAttributes<HTMLElement>) {
   return <pre className='bg-gray-100 p-4 rounded mb-4'>{props.children}</pre>;
 }
 
+export function CustomLink(props: React.AnchorHTMLAttributes<HTMLAnchorElement>) {
+  return (
+    <a
+      {...props}
+      className="text-blue-600 hover:text-blue-800 font-semibold"
+    />
+  );
+}
+
 export function Code(props: React.HTMLAttributes<HTMLElement>) {
   return (
     <code
@@ -90,6 +99,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     li: ListItem,
     pre: Pre,
     code: Code,
+    a: CustomLink,
     StackBlitzEmbed: StackBlitzEmbed,
     wrapper: Wrapper,
   };
