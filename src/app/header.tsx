@@ -11,7 +11,7 @@ export default function Header() {
         target="_blank"
         href="https://github.com/jdaun0621"
         rel="noopener noreferrer"
-        className="text-sm hover:text-indigo-800">
+        className="text-1xl font-bold hover:text-indigo-800">
         GitHub
       </a>
     </header>

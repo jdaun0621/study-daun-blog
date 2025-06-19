@@ -24,7 +24,7 @@ export default async function Home() {
           <div key={post.slug} className='rounded-xl bg-indigo-100 shadow-md 
               transition-transform transform hover:-translate-y-1 hover:scale-105 
                hover:shadow-xl cursor-pointer'
-           style={{ boxShadow: '0 8px 10px rgba(0, 0, 0, 0.35)' }}>
+           style={{ boxShadow: '0 8px 10px rgba(0, 0, 0, 0.25)' }}>
             <Image
               src={
                 post.metadata.image ||
