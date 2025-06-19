@@ -78,4 +78,4 @@ MIT License
 
 ## 배포주소
 
-https://study-daun-blog.vercel.app/
+배포 주소: https://study-daun-blog.vercel.app/
