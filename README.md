@@ -76,6 +76,6 @@ next-mdx-blog-template/
 
 MIT License
 
-## 배포주소
+## 배포 정보
 
 배포 주소: https://study-daun-blog.vercel.app/
