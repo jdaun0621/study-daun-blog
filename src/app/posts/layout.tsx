@@ -1,8 +1,12 @@
 // src/app/posts/layout.tsx
-export default function PostsLayout({
+export default function PostLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>; // 감싸주기만 해도 OK
+  return (
+    <div className='w-full flex flex-col items-center px-4 py-8'>
+      <div className='max-w-6xl w-full'>{children}</div>
+    </div>
+  );
 }
