@@ -43,14 +43,14 @@ export default async function Home() {
               <h2 className='text-2xl font-bold mb-2'>
                 <Link
                   href={`/posts/${post.slug}`}
-                  className='text-emerald-400 hover:text-violet-700 transition-colors duration-150'>
+                  className='text-cyan-500 hover:text-violet-700 transition-colors duration-150'>
                   {post.metadata.title}
                 </Link>
               </h2>
               <p className='text-gray-700 mb-4'>{post.metadata.description}</p>
               <Link
                 href={`/posts/${post.slug}`}
-                className='text-violet-400 hover:text-fuchsia-700'>
+                className='text-violet-500 hover:text-fuchsia-700'>
                 더보기
               </Link>
             </div>
