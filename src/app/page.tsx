@@ -23,7 +23,7 @@ export default async function Home() {
         {filteredPosts.map((post) => (
           <div
             key={post.slug}
-            className='rounded-x1 bg-indigo-100 shadow-md 
+            className='rounded-x1 bg-cyan-50 
               transition-transform transform hover:-translate-y-1 hover:scale-105 
                hover:shadow-xl cursor-pointer'
             style={{ boxShadow: '0 8px 10px rgba(0, 0, 0, 0.25)' }}>
@@ -41,14 +41,14 @@ export default async function Home() {
               <h2 className='text-2xl font-bold mb-2'>
                 <Link
                   href={`/posts/${post.slug}`}
-                  className='text-indigo-400 hover:text-violet-700 transition-colors duration-150'>
+                  className='text-emerald-400 hover:text-violet-700 transition-colors duration-150'>
                   {post.metadata.title}
                 </Link>
               </h2>
               <p className='text-gray-700 mb-4'>{post.metadata.description}</p>
               <Link
                 href={`/posts/${post.slug}`}
-                className='text-blue-600 hover:underline'>
+                className='text-violet-400 hover:text-fuchsia-700'>
                 더보기
               </Link>
             </div>
