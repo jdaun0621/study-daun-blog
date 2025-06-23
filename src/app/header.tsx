@@ -13,7 +13,7 @@ export default function Header() {
         target='_blank'
         href='https://github.com/jdaun0621'
         rel='noopener noreferrer'
-        className='text-1xl text-emerald-500 font-bold hover:text-violet-600'>
+        className='text-1xl text-emerald-500 font-bold hover:text-violet-800'>
         GitHub
       </a>
     </header>
