@@ -20,7 +20,7 @@ export default async function Home() {
   return (
     <div
       className='w-full flex flex-col items-center px-4 py-8 
-      bg-gradient-to-br from-[#f4fff7] to-[#d2f0e2] min-h-screen '>
+      bg-gradient-to-br from-[#f4fff7] to-[#c8ffe5] min-h-screen '>
       <div className='max-w-6xl w-full grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-6 grid'>
         {filteredPosts.map((post) => (
           <div
