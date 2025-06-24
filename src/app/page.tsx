@@ -118,7 +118,7 @@ export default async function Home() {
               <p className='text-gray-700 mb-4'>{post.metadata.description}</p>
               <Link
                 href={`/posts/${post.slug}`}
-                className='text-violet-500 hover:text-fuchsia-700 font-semibold'>
+                className='text-cyan-500 hover:text-violet-700 font-semibold'>
                 더보기 →
               </Link>
             </div>
