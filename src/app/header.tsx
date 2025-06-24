@@ -5,7 +5,7 @@ export default function Header() {
     <header className='sticky top-0 z-10 bg-white/30 backdrop-blur-xl h-[70px] flex items-center justify-between px-4 border-b-blue-400/10 '>
       <Link
         href='/'
-        className='text-2xl font-bold text-violet-500 transition-colors  '>
+        className='text-2xl font-bold text-indigo-400 transition-colors  '>
         DAUN Blog
       </Link>
 
@@ -13,7 +13,7 @@ export default function Header() {
         target='_blank'
         href='https://github.com/jdaun0621'
         rel='noopener noreferrer'
-        className='text-1xl text-emerald-500 font-bold hover:text-violet-800'>
+        className='text-1xl text-gray-400 font-bold hover:text-violet-800'>
         GitHub
       </a>
     </header>
