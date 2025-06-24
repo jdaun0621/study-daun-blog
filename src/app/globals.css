@@ -4,4 +4,6 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom right, #dbffe7, #cfdfff);
+  min-height: 100vh;
 }
