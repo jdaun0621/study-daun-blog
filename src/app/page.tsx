@@ -20,12 +20,12 @@ export default async function Home() {
   return (
     <div
       className='w-full flex flex-col items-center px-4 py-8 
-      bg-gradient-to-br from-[#d2baff] to-[#adc9ff] min-h-screen '>
+      bg-gradient-to-br from-[#fdfcff] to-[#cfdfff] min-h-screen '>
       <div className='max-w-6xl w-full grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-6 grid'>
         {filteredPosts.map((post) => (
           <div
             key={post.slug}
-            className='rounded-x1 bg-indigo-100  rounded-3xl
+            className='rounded-x1 bg-white  rounded-2xl
               transition-transform transform hover:-translate-y-1 hover:scale-105 
                hover:shadow-xl cursor-pointer'
             style={{ boxShadow: '0 8px 10px rgba(0, 0, 0, 0.25)' }}>

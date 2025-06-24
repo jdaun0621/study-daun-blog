@@ -55,12 +55,11 @@ export function Pre(props: React.HTMLAttributes<HTMLElement>) {
   return <pre className='bg-gray-100 p-4 rounded mb-4'>{props.children}</pre>;
 }
 
-export function CustomLink(props: React.AnchorHTMLAttributes<HTMLAnchorElement>) {
+export function CustomLink(
+  props: React.AnchorHTMLAttributes<HTMLAnchorElement>,
+) {
   return (
-    <a
-      {...props}
-      className="text-blue-600 hover:text-blue-800 font-semibold"
-    />
+    <a {...props} className='text-blue-600 hover:text-blue-800 font-semibold' />
   );
 }
 
@@ -68,19 +67,14 @@ export function Code(props: React.HTMLAttributes<HTMLElement>) {
   return (
     <code
       {...props}
-      className='bg-gray-200 rounded px-1 text-sm font-mono text-gray-800'
-    >
+      className='bg-gray-200 rounded px-1 text-sm font-mono text-gray-800'>
       {props.children}
     </code>
   );
 }
 
 export function Wrapper({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="rounded-xl p-6 bg-white shadow-2xl">
-      {children}
-    </div>
-  );
+  return <div className='rounded-xl p-6 bg-white shadow-2xl'>{children}</div>;
 }
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
