@@ -24,7 +24,7 @@ export default async function Home() {
         <h1 className='text-4xl font-extrabold text-indigo-500 mb-6'>
           프론트엔드 개발자를 꿈꾸는
         </h1>
-        <h2 className='text-3xl font-bold text-gray-800 mb-30'>
+        <h2 className='text-4xl font-bold text-gray-800 mb-30'>
           정다운 입니다.
         </h2>
 
