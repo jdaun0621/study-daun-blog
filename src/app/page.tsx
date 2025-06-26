@@ -93,36 +93,33 @@ export default async function Home() {
       {/* 👉 포스트 카드 영역 */}
       <section className='max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
         {filteredPosts.map((post) => (
-          <div
-            key={post.slug}
-            className='rounded-2xl bg-white transition-transform transform hover:-translate-y-1 hover:scale-105 hover:shadow-xl cursor-pointer'
-            style={{ boxShadow: '0 8px 10px rgba(0, 0, 0, 0.25)' }}>
-            <Image
-              src={
-                post.metadata.image ||
-                `/posts/og-image?title=${encodeURIComponent(post.metadata.title)}`
-              }
-              alt={post.metadata.title}
-              className='w-full object-cover rounded-t-2xl aspect-[1200/630]'
-              width={1200}
-              height={630}
-            />
-            <div className='p-4'>
-              <h2 className='text-2xl font-bold mb-2'>
-                <Link
-                  href={`/posts/${post.slug}`}
-                  className='text-indigo-500 hover:text-violet-600 transition-colors duration-150'>
+          <Link key={post.slug} href={`/posts/${post.slug}`} className='block'>
+            <div
+              className='bg-white transition-transform transform hover:-translate-y-1 hover:scale-105 hover:shadow-xl cursor-pointer rounded-2xl'
+              style={{ boxShadow: '0 8px 10px rgba(0, 0, 0, 0.25)' }}>
+              <Image
+                src={
+                  post.metadata.image ||
+                  `/posts/og-image?title=${encodeURIComponent(post.metadata.title)}`
+                }
+                alt={post.metadata.title}
+                className='w-full object-cover aspect-[1200/630]'
+                width={1200}
+                height={630}
+              />
+              <div className='p-4'>
+                <h2 className='text-2xl font-bold mb-2 text-gray-800'>
                   {post.metadata.title}
-                </Link>
-              </h2>
-              <p className='text-gray-700 mb-4'>{post.metadata.description}</p>
-              <Link
-                href={`/posts/${post.slug}`}
-                className='text-cyan-500 hover:text-violet-700 font-semibold'>
-                더보기 →
-              </Link>
+                </h2>
+                <p className='text-gray-700 mb-4'>
+                  {post.metadata.description}
+                </p>
+                <span className='text-indigo-500 hover:text-emerald-500 font-semibold'>
+                  더보기 →
+                </span>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </section>
     </div>
