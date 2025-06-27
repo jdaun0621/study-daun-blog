@@ -95,7 +95,7 @@ export default async function Home() {
         {filteredPosts.map((post) => (
           <Link key={post.slug} href={`/posts/${post.slug}`} className='block'>
             <div
-              className='bg-white transition-transform transform hover:-translate-y-1 hover:scale-105 hover:shadow-xl cursor-pointer rounded-2xl'
+              className='bg-white transition-transform transform hover:-translate-y-1 hover:scale-105 hover:shadow-xl cursor-pointer rounded-2xl min-h-[330px]'
               style={{ boxShadow: '0 8px 10px rgba(0, 0, 0, 0.25)' }}>
               <Image
                 src={
@@ -107,14 +107,14 @@ export default async function Home() {
                 width={1200}
                 height={630}
               />
-              <div className='p-4'>
-                <h2 className='text-2xl font-bold mb-2 text-gray-800'>
+              <div className='p-5'>
+                <h2 className='text-2xl font-bold mb-2 text-gray-700'>
                   {post.metadata.title}
                 </h2>
                 <p className='text-gray-700 mb-4'>
                   {post.metadata.description}
                 </p>
-                <span className='text-indigo-500 hover:text-emerald-500 font-semibold'>
+                <span className='text-indigo-400 hover:text-blue-700 font-semibold'>
                   더보기 →
                 </span>
               </div>
