@@ -18,10 +18,10 @@ export default async function Home() {
   const filteredPosts = posts.filter((post) => post.metadata);
 
   return (
-    <div className='w-full bg-gradient-to-br from-[#dbffe7] to-[#cfdfff] min-h-screen px-4 py-10'>
+    <div className='w-full bg-gradient-to-br from-[#f0f0f0] to-[#ffffff] min-h-screen px-4 py-10'>
       {/* 👉 상단 소개 영역 */}
       <section className='max-w-4xl mx-auto mb-16 text-center'>
-        <h1 className='text-4xl font-extrabold text-indigo-500 mb-6'>
+        <h1 className='text-4xl font-extrabold text-blue-500 mb-6'>
           프론트엔드 개발자를 꿈꾸는
         </h1>
         <h2 className='text-4xl font-bold text-gray-800 mb-30'>
