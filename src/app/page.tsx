@@ -18,7 +18,7 @@ export default async function Home() {
   const filteredPosts = posts.filter((post) => post.metadata);
 
   return (
-    <div className='w-full bg-gradient-to-br from-[#f0f0f0] to-[#ffffff] min-h-screen px-4 py-10'>
+    <div className='w-full bg-gradient-to-br from-[#f5f5f5] to-[#f5f5f5] min-h-screen px-4 py-10'>
       {/* 👉 상단 소개 영역 */}
       <section className='max-w-4xl mx-auto mb-16 text-center'>
         <h1 className='text-4xl font-extrabold text-blue-500 mb-6'>

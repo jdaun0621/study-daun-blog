@@ -6,7 +6,7 @@ export default function Header() {
     <header className='sticky top-0 z-10 bg-white/30 backdrop-blur-xl h-[80px] flex items-center justify-between px-4 border-b border-b-blue-400/10'>
       <Link
         href='/'
-        className='text-2xl font-bold text-cyan-600 transition-colors'>
+        className='text-2xl font-bold text-blue-600 transition-colors'>
         DAUN Blog
       </Link>
 
