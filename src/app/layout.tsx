@@ -1,3 +1,4 @@
+//layout.tsx
 import type { Metadata } from 'next';
 
 import Footer from './footer';
