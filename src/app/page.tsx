@@ -20,7 +20,7 @@ export default async function Home() {
 
   return (
     <div className='w-full bg-gradient-to-br from-[#f5f5f5] to-[#f5f5f5] min-h-screen px-4 py-10'>
-      {/* 👉 상단 소개 영역 */}
+      {/* 상단 소개 영역 */}
       <section className='max-w-4xl mx-auto mb-16 text-center'>
         <h1 className='text-4xl font-bold text-gray-800 mb-20'>안녕하세요,</h1>
 
@@ -33,14 +33,14 @@ export default async function Home() {
 
         <h3 className='text-3xl font-bold text-gray-800 mb-10'>기술 스택</h3>
 
-        {/* 기술 스택 아이콘 */}
+        {/* 기술 스택 아이콘 이미지 */}
         <div className='grid grid-cols-3 sm:grid-cols-5 gap-6 justify-center items-center mb-20'>
           {/* React */}
           <div className='flex flex-col items-center'>
             <Image src='/icons/react.png' alt='React' width={48} height={48} />
             <p className='mt-2 text-sm font-semibold text-gray-700'>React</p>
           </div>
-          {/* Next.js */}
+          {/* Nextjs */}
           <div className='flex flex-col items-center'>
             <Image
               src='/icons/nextjs.png'
@@ -50,7 +50,7 @@ export default async function Home() {
             />
             <p className='mt-2 text-sm font-semibold text-gray-700'>Next.js</p>
           </div>
-          {/* JavaScript */}
+          {/* Javascript */}
           <div className='flex flex-col items-center'>
             <Image
               src='/icons/js.png'
@@ -62,7 +62,7 @@ export default async function Home() {
               JavaScript
             </p>
           </div>
-          {/* TypeScript */}
+          {/* Typescript */}
           <div className='flex flex-col items-center'>
             <Image
               src='/icons/ts.png'
@@ -93,7 +93,7 @@ export default async function Home() {
         블로그 포스트
       </h4>
 
-      {/* 👉 포스트 카드 영역 */}
+      {/* 포스트 카드 영역 */}
       <section className='max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
         {filteredPosts.map((post) => (
           <Link key={post.slug} href={`/posts/${post.slug}`} className='block'>
